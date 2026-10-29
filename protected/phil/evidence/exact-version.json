@@ -3,8 +3,8 @@
   "subject": {
     "chainId": "1",
     "forkBlock": "26295136",
-    "launchWallet": "0x4C8228aA14e46564f5b126eabF8f0e53d2408DeE",
-    "developer": "0x4C8228aA14e46564f5b126eabF8f0e53d2408DeE",
+    "launchWallet": "0x717E4598c19EBCd372cE7B50C0381650Cc0ff440",
+    "developer": "0x717E4598c19EBCd372cE7B50C0381650Cc0ff440",
     "router": "0xBE4bF6Ac8c6F012E1C8f25747A9fBccB2FDAC4C3",
     "graphFactory": "0xB012e4A8F2c5FC4E8E4faCA9D5Ad6FfF13FBA887",
     "creationCodeHashes": {

@@ -2,7 +2,7 @@
   "schemaVersion": "elonphil.exact-version-execution-evidence.v1",
   "subject": {
     "chainId": "1",
-    "forkBlock": "26297177",
+    "forkBlock": "26297210",
     "launchWallet": "0x717E4598c19EBCd372cE7B50C0381650Cc0ff440",
     "developer": "0x717E4598c19EBCd372cE7B50C0381650Cc0ff440",
     "router": "0xBE4bF6Ac8c6F012E1C8f25747A9fBccB2FDAC4C3",
@@ -20,8 +20,8 @@
       "valueWei": "50000000000000000"
     },
     "permitWindow": {
-      "validAfter": "1793351339",
-      "deadline": "1793437739",
+      "validAfter": "1793351738",
+      "deadline": "1793438138",
       "lifetimeSeconds": "86400",
       "routerMaximumLifetimeSeconds": "86400"
     }
@@ -507,7 +507,7 @@
       "allTargetsAtPredictedAddressesWithPackedRuntime": true,
       "creatorFee": "1000000000000000",
       "deployedThroughRealGraphFactoryAsRouter": true,
-      "feedAgeSecondsAtLaunch": "1116",
+      "feedAgeSecondsAtLaunch": "1512",
       "feedAnswer": "231096199548",
       "grossNative": "50000000000000000",
       "initialBuyInputWei": "50000000000000000",

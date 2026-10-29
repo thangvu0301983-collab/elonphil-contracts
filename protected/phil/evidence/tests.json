@@ -1,0 +1,183 @@
+{
+  "schemaVersion": "elonphil.forge-test-evidence.v1",
+  "status": "passed",
+  "forkTestsIncluded": true,
+  "passed": 35,
+  "results": [
+    {
+      "suite": "PhilExactVersionForkTest",
+      "test": "test_exact_00_initialBuyBoundCall()",
+      "status": "Success"
+    },
+    {
+      "suite": "PhilExactVersionForkTest",
+      "test": "test_exact_A01_customAccountingSolvencyRefundWithdrawal()",
+      "status": "Success"
+    },
+    {
+      "suite": "PhilExactVersionForkTest",
+      "test": "test_exact_C01_callbackAuthentication()",
+      "status": "Success"
+    },
+    {
+      "suite": "PhilExactVersionForkTest",
+      "test": "test_exact_F01_platformFeeExactNoBypassNoOvercharge()",
+      "status": "Success"
+    },
+    {
+      "suite": "PhilExactVersionForkTest",
+      "test": "test_exact_J01_philVaultJabPool()",
+      "status": "Success"
+    },
+    {
+      "suite": "PhilExactVersionForkTest",
+      "test": "test_exact_L01_liquidityCustodyAndWithdrawal()",
+      "status": "Success"
+    },
+    {
+      "suite": "PhilExactVersionForkTest",
+      "test": "test_exact_P01_openingFdvFloor()",
+      "status": "Success"
+    },
+    {
+      "suite": "PhilExactVersionForkTest",
+      "test": "test_exact_P02_staleOracleRejected()",
+      "status": "Success"
+    },
+    {
+      "suite": "PhilExactVersionForkTest",
+      "test": "test_exact_P03_initialBuyAboveTwoPercentReverts()",
+      "status": "Success"
+    },
+    {
+      "suite": "PhilExactVersionForkTest",
+      "test": "test_exact_P04_initialBuyMinimumOutputEnforced()",
+      "status": "Success"
+    },
+    {
+      "suite": "PhilExactVersionForkTest",
+      "test": "test_exact_P05_singleAtomicInitialization()",
+      "status": "Success"
+    },
+    {
+      "suite": "PhilExactVersionForkTest",
+      "test": "test_exact_P06_openingTaxAtLaunchSecond()",
+      "status": "Success"
+    },
+    {
+      "suite": "PhilExactVersionForkTest",
+      "test": "test_exact_P07_openingTaxDecaysToNormal()",
+      "status": "Success"
+    },
+    {
+      "suite": "PhilExactVersionForkTest",
+      "test": "test_exact_P08_developerTaxExemptButCapped()",
+      "status": "Success"
+    },
+    {
+      "suite": "PhilExactVersionForkTest",
+      "test": "test_exact_P09_buyerCapIsCumulativeAndSellsDoNotRestore()",
+      "status": "Success"
+    },
+    {
+      "suite": "PhilExactVersionForkTest",
+      "test": "test_exact_P10_recipientCapOnTransfers()",
+      "status": "Success"
+    },
+    {
+      "suite": "PhilExactVersionForkTest",
+      "test": "test_exact_P11_canonicalRouterOnlyBuysSellsAnyRoute()",
+      "status": "Success"
+    },
+    {
+      "suite": "PhilExactVersionForkTest",
+      "test": "test_exact_P12_protectionExpiresAt300s()",
+      "status": "Success"
+    },
+    {
+      "suite": "PhilExactVersionForkTest",
+      "test": "test_exact_S01_fourQuadrantsMultiSize()",
+      "status": "Success"
+    },
+    {
+      "suite": "PhilExactVersionForkTest",
+      "test": "test_exact_S02_secondUserAndTime()",
+      "status": "Success"
+    },
+    {
+      "suite": "PhilVaultTest",
+      "test": "test_agentAndGuardianTimelocked()",
+      "status": "Success"
+    },
+    {
+      "suite": "PhilVaultTest",
+      "test": "test_agentRewardsAMeme()",
+      "status": "Success"
+    },
+    {
+      "suite": "PhilVaultTest",
+      "test": "test_anyoneCanDistribute_repeatedSafely()",
+      "status": "Success"
+    },
+    {
+      "suite": "PhilVaultTest",
+      "test": "test_dayBudget25Percent_resetsNextDay()",
+      "status": "Success"
+    },
+    {
+      "suite": "PhilVaultTest",
+      "test": "test_guardianPausesAgentAtOnce()",
+      "status": "Success"
+    },
+    {
+      "suite": "PhilVaultTest",
+      "test": "test_neverPaysTeamWallets()",
+      "status": "Success"
+    },
+    {
+      "suite": "PhilVaultTest",
+      "test": "test_onlyAgent_andRewardRules()",
+      "status": "Success"
+    },
+    {
+      "suite": "PhilVaultTest",
+      "test": "test_poolCannotLeaveAnyOtherWay()",
+      "status": "Success"
+    },
+    {
+      "suite": "PhilVaultTest",
+      "test": "test_reentrantRecipientCannotDoubleCollect()",
+      "status": "Success"
+    },
+    {
+      "suite": "PhilVaultTest",
+      "test": "test_reentrantTreasuryCannotDoubleDistribute()",
+      "status": "Success"
+    },
+    {
+      "suite": "PhilVaultTest",
+      "test": "test_split80_20()",
+      "status": "Success"
+    },
+    {
+      "suite": "PhilVaultTest",
+      "test": "test_treasuryTimelock_oldFeesToOldTreasury()",
+      "status": "Success"
+    },
+    {
+      "suite": "PhilVaultTest",
+      "test": "test_zeroAddressesRejected()",
+      "status": "Success"
+    },
+    {
+      "suite": "PhilVaultTest",
+      "test": "testFuzz_rewardsNeverBreakCaps(uint96,uint128,uint128)",
+      "status": "Success"
+    },
+    {
+      "suite": "PhilVaultTest",
+      "test": "testFuzz_splitAlwaysAddsUp(uint96)",
+      "status": "Success"
+    }
+  ]
+}

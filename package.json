@@ -1,0 +1,10 @@
+{
+  "name": "elonphil-contracts",
+  "private": true,
+  "description": "ELON PHIL XXXL ($ELONPHILXXXL): Phil Vault with the Phil AI Jab Pool, launched on Programmable launch protection v1.",
+  "license": "MIT",
+  "type": "module",
+  "devDependencies": {
+    "solc": "0.8.26"
+  }
+}

@@ -17,7 +17,7 @@ applicant cannot add runtime evidence to the admission record. It is provided he
 
 1. `export-exact-fixture.mjs` reads the packed `launch.json` and produces the Router's graph targets with resolved
    init code and initializer calldata, in deployment order, plus the route namespace and nonce.
-2. On an Ethereum mainnet fork (block 26297115), the test sends those exact targets to Programmable's
+2. On an Ethereum mainnet fork (block 26297177), the test sends those exact targets to Programmable's
    GraphFactory (`0xB012e4A8F2c5FC4E8E4faCA9D5Ad6FfF13FBA887`), called as the 24h Router (`0xBE4bF6Ac8c6F012E1C8f25747A9fBccB2FDAC4C3`) with the launch
    wallet as `tx.origin`.
 3. Every target is asserted at its predicted CREATE2 address with the packed runtime code hash.
@@ -29,7 +29,7 @@ request is rebuilt and re-tested until the regenerated evidence is byte-identica
 
 ## 1. Permit window
 
-The permit is valid from `validAfter` = 2026-10-30 08:56:33 UTC to `deadline` = 2026-10-31 08:56:33 UTC: 86,400 s, the 24h Router's
+The permit is valid from `validAfter` = 2026-10-30 09:08:59 UTC to `deadline` = 2026-10-31 09:08:59 UTC: 86,400 s, the 24h Router's
 `MAX_PERMIT_LIFETIME`. The window opens about 24 hours after packing, so it covers the 24-hour review and then the
 24-hour launch window.
 
@@ -42,7 +42,7 @@ The permit is valid from `validAfter` = 2026-10-30 08:56:33 UTC to `deadline` = 
 | Observed output | 6,579,449,730,373,077,813,050,959 ELONPHILXXXL units (6,579,449.73 ELONPHILXXXL) to the developer, at or above the minimum and below the 2% cap (20,000,000 ELONPHILXXXL) |
 | Fees | platform 150,000,000,000,000 wei; creator 1,000,000,000,000,000 wei; opening tax 0 (developer exempt) |
 | Opening price | FDV USD 17,045 at tick 187260 |
-| Feed | Chainlink ETH/USD answer 231096199548, 372 s old (limit 3,600 s) |
+| Feed | Chainlink ETH/USD answer 231096199548, 1,116 s old (limit 3,600 s) |
 | Floor | Launch passes while the answer is at least 203368237288 (11.99% below); one unit lower reverts with `OpeningValuationTooLow` |
 | Oversized buy | A 0.5 ETH opening buy reverts the whole graph (`BuyerLimitExceeded`) |
 | Short buy | A 0.045 ETH buy misses the bound minimum and reverts (`InvalidInitialBuy`) |
@@ -106,8 +106,8 @@ Place the submitted bytes at `protected/launch.json` with its config, then run:
 ```bash
 PL_DIR=<@programmable/launch 4.1.7> node programmable/export-exact-fixture.mjs
 mkdir -p evidence/exact
-ETH_RPC_URL=<archive RPC> FORK_BLOCK=26297115 forge test --json > forge.json
-FORK_BLOCK=26297115 node programmable/collect-exact-evidence.mjs forge.json
+ETH_RPC_URL=<archive RPC> FORK_BLOCK=26297177 forge test --json > forge.json
+FORK_BLOCK=26297177 node programmable/collect-exact-evidence.mjs forge.json
 ```
 
 `evidence/exact-version.json` then matches the packed `phil/evidence/exact-version.json` byte for byte.
